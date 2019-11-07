@@ -1,19 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-
 int main(void)
-
-
 {
-	printf("4자리 정수 입력: 6527 \n");
-	printf("%010d\n", 6527);
-	printf("%+010d\n", 6527);
-	printf("%-10d\n", 6527);
-	printf("%10o\n", 6527);
-	printf("%010o\n", 6527);
-	printf("%10x\n", 6527);
-	printf("%0#10x\n", 6527);
-	printf("%0#x\n", 6527);
-	return 0;
+	int x;
+	int y;
 
+	printf("첫번째 정수");
+	scanf("%d", &x);
+
+	printf("두번째 정수");
+	scanf("%d", &y);
+
+	(x > y) ? printf("목 %d 나머지 %d \n", x / y, x % y) :
+		printf("목 %d 나머지%d\n", x / y, x % y);
+
+	return 0;
 }
